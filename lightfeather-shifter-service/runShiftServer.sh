@@ -1,0 +1,1 @@
+java -jar target\lightfeather-shifter-service-0.0.1-SNAPSHOT.jar com.wilsonburns.shifter.LightfeatherShifterServiceApplication
