@@ -1,0 +1,43 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Create Top Secret Account</mat-card-title>
+    </mat-card-header>
+
+
+    <form (submit)="onSubmit()" id="registerForm" class="example-form" [formGroup]="Registration">
+
+      <mat-card-content>
+        <div style="color: white">Username</div>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <input matInput [formControl]="username">
+          <mat-error>Username is required and cannot exceed 15 characters</mat-error>
+        </mat-form-field>
+
+        <div style="color: white">Email</div>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <input matInput  [formControl]="email">
+          <mat-error>Invalid email</mat-error>
+        </mat-form-field>
+
+        <div style="color: white">Password</div>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <input type="password" id="password" matInput [formControl]="password" (input)="clearPassword()">
+          <mat-error>Password is required and cannot exceed 15 characters</mat-error>
+        </mat-form-field>
+        
+        <div style="color: white">Confirm Password</div>
+        <mat-form-field class="example-full-width" appearance="outline">
+          <input type="password"  matInput [formControl]="confirmation">
+          <mat-error>Passwords do not match</mat-error>
+        </mat-form-field>
+
+
+      </mat-card-content>
+    <br><br>
+
+      <button type="submit" [disabled]="username.invalid || email.invalid || password.invalid || confirmation.invalid"  mat-stroked-button color="accent" class="btn-block">Register</button>
+     
+    </form>
+  </mat-card>
+</div>
