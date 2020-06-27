@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+.myLabel{
+   color:#F0FFFF;
+}
+
 body {
   background-image: url("assets/shutterstock_55713586.jpg");
   background-position: center;

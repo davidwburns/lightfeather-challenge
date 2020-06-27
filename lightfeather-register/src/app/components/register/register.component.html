@@ -8,25 +8,25 @@
     <form (submit)="onSubmit()" id="registerForm" class="example-form" [formGroup]="Registration">
 
       <mat-card-content>
-        <div style="color: white">Username</div>
+        <div class="myLabel">Username</div>
         <mat-form-field class="example-full-width" appearance="outline">
           <input matInput [formControl]="username">
           <mat-error>Username is required and cannot exceed 15 characters</mat-error>
         </mat-form-field>
 
-        <div style="color: white">Email</div>
+        <div class="myLabel">Email</div>
         <mat-form-field class="example-full-width" appearance="outline">
           <input matInput  [formControl]="email">
           <mat-error>Invalid email</mat-error>
         </mat-form-field>
 
-        <div style="color: white">Password</div>
+        <div class="myLabel">Password</div>
         <mat-form-field class="example-full-width" appearance="outline">
           <input type="password" id="password" matInput [formControl]="password" (input)="clearPassword()">
           <mat-error>Password is required and cannot exceed 15 characters</mat-error>
         </mat-form-field>
         
-        <div style="color: white">Confirm Password</div>
+        <div class="myLabel">Confirm Password</div>
         <mat-form-field class="example-full-width" appearance="outline">
           <input type="password"  matInput [formControl]="confirmation">
           <mat-error>Passwords do not match</mat-error>
