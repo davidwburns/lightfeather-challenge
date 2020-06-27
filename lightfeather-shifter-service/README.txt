@@ -26,7 +26,7 @@ Flow
 
 To run:
 
---Install Java, Maven,and GIT
+--Install Java JDK, Maven,and GIT
 --Add the bins to the system path
 --use terminal to execute "git clone https://github.com/davidwburns/lightfeather-challenge.git"
 --use a terminal to go to the project directory lightfeather-shifter-service
